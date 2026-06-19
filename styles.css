@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:wght@400;500;700&display=swap");
+
+:root {
+  --scrollbar-thumb: rgba(15, 23, 42, 0.16);
+  --scrollbar-thumb-hover: rgba(15, 23, 42, 0.28);
+}
+
+.dark,
+[data-theme="dark"] {
+  --scrollbar-thumb: rgba(255, 255, 255, 0.18);
+  --scrollbar-thumb-hover: rgba(255, 255, 255, 0.3);
+}
+
+html {
+  scrollbar-width: none;
+  overflow: auto;
+}
+
+body,
+main,
+.mintlify-content,
+nav,
+aside,
+[data-radix-scroll-area-viewport],
+[class*="scroll"],
+[class*="overflow-y-auto"] {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) transparent;
+}
+
+body::-webkit-scrollbar,
+main::-webkit-scrollbar,
+.mintlify-content::-webkit-scrollbar,
+nav::-webkit-scrollbar,
+aside::-webkit-scrollbar,
+[data-radix-scroll-area-viewport]::-webkit-scrollbar,
+[class*="scroll"]::-webkit-scrollbar,
+[class*="overflow-y-auto"]::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+body::-webkit-scrollbar-track,
+main::-webkit-scrollbar-track,
+.mintlify-content::-webkit-scrollbar-track,
+nav::-webkit-scrollbar-track,
+aside::-webkit-scrollbar-track,
+[data-radix-scroll-area-viewport]::-webkit-scrollbar-track,
+[class*="scroll"]::-webkit-scrollbar-track,
+[class*="overflow-y-auto"]::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb,
+main::-webkit-scrollbar-thumb,
+.mintlify-content::-webkit-scrollbar-thumb,
+nav::-webkit-scrollbar-thumb,
+aside::-webkit-scrollbar-thumb,
+[data-radix-scroll-area-viewport]::-webkit-scrollbar-thumb,
+[class*="scroll"]::-webkit-scrollbar-thumb,
+[class*="overflow-y-auto"]::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 0;
+}
+
+body::-webkit-scrollbar-thumb:hover,
+main::-webkit-scrollbar-thumb:hover,
+.mintlify-content::-webkit-scrollbar-thumb:hover,
+nav::-webkit-scrollbar-thumb:hover,
+aside::-webkit-scrollbar-thumb:hover,
+[data-radix-scroll-area-viewport]::-webkit-scrollbar-thumb:hover,
+[class*="scroll"]::-webkit-scrollbar-thumb:hover,
+[class*="overflow-y-auto"]::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+.prose,
+.mintlify-content,
+main {
+  font-size: 13px !important;
+}
+
+.prose h1,
+.mintlify-content h1,
+main h1 {
+  font-family: "Lato", var(--font-sans), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 1.65rem !important;
+  line-height: 1.18;
+  letter-spacing: 0;
+  font-weight: 400 !important;
+}
+
+.mc-brand-logo {
+  font-size: 1.5rem !important;
+  line-height: 1.2 !important;
+}
+
+.nav-logo img,
+.nav-logo svg {
+  height: 2rem;
+  width: auto;
+}
+
+#navigation-items {
+  margin-top: 0.75rem !important;
+}
+
+#footer {
+  display: none !important;
+}
+
+#navigation-items div.mt-6 {
+  margin-top: 1.5rem !important;
+}
+
+#navigation-items div.mt-6 .sidebar-group-header  {
+  margin-bottom: 0.25rem !important;
+}
+
+#navigation-items div.mt-6 ul li > a {
+  padding: 0.35rem 0;
+  letter-spacing: -0.005em;
+}
+
+main #content-area {
+  margin: 0.75rem 0.85rem !important;
+}
+
+#table-of-contents-content {
+  margin-top: 0.1rem !important;
+}
+
+#search-bar-entry {
+  display: none !important;
+}
+
+#content-area > #content div.absolute a[aria-label="Navigate to header"] {
+  display: none !important;
+}
+
+#content {
+  margin-top: 0px !important;
+}
+
+header a>div.nav-logo {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.02em !important;
+  font-size: 1.3rem !important;
+  height: 2.5rem!important;
+}
+
+.prose h2,
+.mintlify-content h2,
+main h2 {
+  font-family: "Lato", var(--font-sans), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 1.35rem;
+  line-height: 1.28;
+  margin-top: 2rem;
+  font-weight: 400 !important;
+}
+
+.prose h3,
+.mintlify-content h3,
+main h3 {
+  font-family: "Lato", var(--font-sans), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 1.08rem;
+  line-height: 1.35;
+  font-weight: 400 !important;
+}
+
+.prose p,
+.prose li,
+.mintlify-content p,
+.mintlify-content li,
+main p,
+main li {
+  line-height: 1.65;
+}
+
+.prose> :where(p, ul, ol),
+.mintlify-content> :where(p, ul, ol),
+main :where(p, ul, ol) {
+  margin-top: 0.85rem;
+  margin-bottom: 0.85rem;
+}
+
+@media (max-width: 640px) {
+
+  .prose,
+  .mintlify-content,
+  main {
+    font-size: 14.5px;
+  }
+
+  .prose h1,
+  .mintlify-content h1,
+  main h1 {
+    font-size: 1.7rem;
+  }
+
+  .prose h2,
+  .mintlify-content h2,
+  main h2 {
+    font-size: 1.22rem;
+  }
+}
