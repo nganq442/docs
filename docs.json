@@ -1,72 +1,65 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
-  "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+  "theme": "sequoia",
+  "name": "Magic Circle",
+  "fonts": {
+    "body": {
+      "family": "Lato"
+    },
+    "heading": {
+      "family": "Lato"
+    }
   },
-  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#16a34a"
+  },
   "navigation": {
-    "pages": [
+    "groups": [
       {
-        "group": "Getting Started",
+        "group": "Bắt đầu",
         "pages": [
           "index",
           "quickstart"
         ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
+      },
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "group": "Quản lý tài liệu",
+        "pages": [
+          "guides/upload-and-library",
+          "guides/ocr",
+          "guides/document-viewer",
+          "guides/cloud-import"
+        ]
+      },
+      {
+        "group": "AI & tìm kiếm",
+        "pages": [
+          "guides/search",
+          "guides/assistant"
+        ]
+      },
+      {
+        "group": "Cộng tác",
+        "pages": [
+          "guides/projects",
+          "guides/organizations",
+          "guides/sharing",
+          "guides/notifications"
+        ]
+      },
+      {
+        "group": "Tài khoản & thanh toán",
+        "pages": [
+          "guides/billing",
+          "guides/settings"
+        ]
+      },
+      {
+        "group": "Hỗ trợ",
+        "pages": [
+          "guides/get-help"
+        ]
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
     ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }
